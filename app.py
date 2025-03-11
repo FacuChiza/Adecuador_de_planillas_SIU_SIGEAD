@@ -7,6 +7,7 @@ from werkzeug.utils import secure_filename
 
 # Inicialización de la aplicación Flask
 app = Flask(__name__)
+app.secret_key = "123456789"
 
 # Configuración de carpetas y extensiones permitidas
 UPLOAD_FOLDER = "uploads"
